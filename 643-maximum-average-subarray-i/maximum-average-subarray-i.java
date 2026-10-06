@@ -4,6 +4,7 @@ class Solution {
         for(int i = 0;i<k;i++){
             sum = sum + nums[i];
         }
+       // max = Math.max(sum,max);
         max = sum;
         for(int i = k;i<nums.length;i++){
             sum = sum + nums[i];
