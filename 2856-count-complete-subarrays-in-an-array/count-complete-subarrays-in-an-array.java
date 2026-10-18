@@ -1,6 +1,11 @@
 class Solution {
     public int countCompleteSubarrays(int[] nums) {
-        int k = (int) Arrays.stream(nums).distinct().count();   
+        // int k = (int) Arrays.stream(nums).distinct().count();  
+        HashSet<Integer> set = new HashSet<>();
+        for(int i : nums){
+            set.add(i);
+        } 
+        int k = set.size();
         int i = 0;
         int j = 0;
         HashMap<Integer,Integer> map = new HashMap<>();
